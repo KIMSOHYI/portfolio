@@ -1,0 +1,1239 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Halant:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'JalnanGothic';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GongGothicMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Pretendard-Regular';
+}
+
+header,
+main {
+  overflow-x: hidden;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/star.jpg) no-repeat center/cover;
+}
+
+.pc {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/star.jpg) no-repeat center/cover;
+}
+
+.pc img {
+  position: absolute;
+  top: 110px;
+  left: 940px;
+  display: inline-block;
+  animation: img 10s infinite linear;
+}
+
+@keyframes img {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pc .round1 {
+  width: 68%;
+  height: 78%;
+  border: 2px solid #ff6e4e;
+  border-radius: 50%;
+  transform: rotate(28deg);
+  position: absolute;
+  top: 7rem;
+  left: 7rem;
+}
+
+.pc .round2 {
+  width: 70%;
+  height: 45%;
+  border: 2px solid #ff6e4e;
+  border-radius: 50%;
+  transform: rotate(-20deg);
+  position: absolute;
+  top: 16rem;
+  right: 5rem;
+}
+
+.pc a {
+  display: block;
+  color: white;
+  font-family: "Merriweather", serif;
+}
+
+.pc a:hover {
+  animation-play-state: paused !important;
+  text-shadow: 0 0 50px rgb(201, 203, 240) !important;
+}
+
+.pc a:nth-child(3) {
+  position: absolute;
+  top: 250px;
+  left: 400px;
+  font-size: 3rem;
+  animation: point 0.4s 0.4s infinite alternate;
+  z-index: 3;
+}
+
+.pc a:nth-child(4) {
+  position: absolute;
+  top: 540px;
+  left: 750px;
+  color: #fb997a;
+  font-size: 3.6rem;
+  animation: point 0.6s 0.5s infinite alternate;
+  z-index: 3;
+}
+
+.pc a:nth-child(5) {
+  position: absolute;
+  top: 295px;
+  right: 240px;
+  font-size: 2.5rem;
+  animation: point 0.3s infinite alternate;
+  z-index: 3;
+}
+
+@keyframes point {
+  0% {
+    transform: rotate(-1deg);
+    text-shadow: 0 0 10px #fb997a;
+  }
+
+  100% {
+    transform: rotate(1deg);
+    text-shadow: 0 0 2px #fb997a;
+  }
+}
+
+.pc .star1 {
+  animation: star 1s infinite alternate;
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+.pc .star11 {
+  animation: star 1s 2s infinite linear alternate;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+}
+
+.pc .star12 {
+  animation: star 0.8s infinite linear alternate;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 18rem;
+  left: 4rem;
+}
+
+.pc .star13 {
+  animation: star 1s infinite linear alternate;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 22rem;
+  left: 13rem;
+}
+
+.pc .star2 {
+  animation: star 1s 1s infinite linear alternate;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 4rem;
+  left: 20rem;
+}
+
+.pc .star3 {
+  animation: star 1s infinite linear alternate;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 7rem;
+  left: 30rem;
+}
+
+.pc .star4 {
+  animation: star 1s infinite linear;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 5rem;
+  left: 50rem;
+}
+
+.pc .star5 {
+  animation: star 1s infinite linear alternate;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 8rem;
+  left: 60rem;
+}
+
+.pc .star6 {
+  animation: star 1s 1s infinite linear alternate;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 3rem;
+  left: 80rem;
+}
+
+.pc .star7 {
+  animation: star 1s infinite linear alternate;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 2rem;
+  left: 86rem;
+}
+
+.pc .star8 {
+  animation: star 1s 2s infinite linear alternate;
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 4rem;
+  left: 95rem;
+}
+
+.pc .star9 {
+  animation: star 1s infinite linear alternate;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 11rem;
+  left: 105rem;
+}
+
+.pc .star10 {
+  animation: star 0.6s 2s infinite linear alternate;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 3rem;
+  left: 112rem;
+}
+
+.pc .star14 {
+  animation: star 1s 0.5s infinite linear alternate;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 20rem;
+  left: 100rem;
+}
+
+.pc .star15 {
+  animation: star 0.8s infinite linear alternate;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 25rem;
+  left: 112rem;
+}
+
+@keyframes star {
+  0% {
+    opacity: 1;
+    box-shadow: 0 0 50px 5px azure;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 반응형 */
+
+.tablet {
+  height: 100vh;
+  position: relative;
+  display: none;
+}
+
+.tablet a:hover {
+  text-shadow: 0 0 20px white;
+}
+
+.tablet a {
+  /* font-family: "Halant", serif; */
+  font-family: "Merriweather", serif;
+}
+
+@keyframes tablet {
+  0% {
+ text-shadow: 0 0  30px rgb(150, 194, 232);
+  }
+
+  100% {
+    text-shadow: 0 0  0px;
+  }
+}
+
+
+.tablet a:nth-child(1) {
+  color: white;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 190px;
+  right: 55px;
+  z-index: 3;
+  animation: tablet 1.5s infinite linear alternate;
+}
+
+.tablet a:nth-child(2) {
+  color: #fb997a;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  z-index: 3;
+  animation: tablet 2.5s infinite linear alternate;
+}
+
+.tablet a:nth-child(3) {
+  color: white;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 790px;
+  right: 20px;
+  z-index: 3;
+  animation: tablet 3.5s infinite linear alternate;
+}
+
+.tablet > .heart-rate.t1 {
+  position: absolute;
+  top: 145px;
+  left: 35px;
+}
+.tablet > .heart-rate.t1 .fade-in {
+  max-width: 90%;
+  right: 20%;
+}
+
+.tablet > .heart-rate.t2 {
+  position: absolute;
+  top: 465px;
+  right: 18px;
+  max-width: 60%;
+}
+.tablet > .heart-rate.t2 .fade-in {
+  max-width: 100%;
+  right: 10%;
+}
+
+.tablet > .heart-rate.t3 {
+  position: absolute;
+  top: 750px;
+  max-width: 68%;
+}
+.tablet > .heart-rate.t3 .fade-in {
+  max-width: 100%;
+  right: 20%;
+}
+
+.heart-rate {
+  max-width: 600px;
+  /* height: 73px; */
+  position: relative;
+  margin: 20px auto;
+  position: absolute;
+}
+
+.fade-in {
+  position: absolute;
+  height: 100%;
+  background-color: black;
+  background: linear-gradient(
+    to left,
+    black 0%,
+    black 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  top: 0;
+  animation: heartRateIn 3.5s linear infinite;
+}
+
+@keyframes heartRateIn {
+  0% {
+    width: 100%;
+  }
+
+  50% {
+    width: 0;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes heartRateOut {
+  0% {
+    left: -120%;
+  }
+
+  30% {
+    left: -120%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.mobile {
+  height: 100vh;
+  position: relative;
+  display: none;
+}
+
+.mobile a {
+  /* font-family: "Halant", serif; */
+  font-family: "Merriweather", serif;
+}
+
+.mobile a:nth-child(1) {
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 100px;
+  right: 60px;
+  z-index: 3;
+  animation: mobile 1.5s infinite linear alternate;
+}
+
+.mobile a:nth-child(2) {
+  color: #fb997a;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  z-index: 3;
+  animation: mobile 2.5s infinite linear alternate;
+}
+
+.mobile a:nth-child(3) {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  top: 540px;
+  right: 25px;
+  z-index: 3;
+  animation: mobile 3.5s infinite linear alternate;
+}
+@keyframes mobile {
+  0% {
+    text-shadow: 0 0  30px rgb(150, 194, 232);
+  }
+
+  100% {
+    text-shadow: 0 0  0px;
+  }
+}
+
+
+.mobile > .heart-rate.m1 {
+  position: absolute;
+  top: 48px;
+  left: 20px;
+}
+.mobile > .heart-rate.t1 .fade-in {
+  max-width: 50%;
+  right: 20%;
+}
+
+.mobile > .heart-rate.m2 {
+  position: absolute;
+  top: 275px;
+  right: 40px;
+}
+.mobile > .heart-rate.t12 .fade-in {
+  max-width: 90%;
+  right: 20%;
+}
+
+.mobile > .heart-rate.m3 {
+  position: absolute;
+  top: 480px;
+  left: 25px;
+}
+.mobile > .heart-rate.t3 .fade-in {
+  max-width: 90%;
+  right: 20%;
+}
+
+.linebg {
+  background: url(../img/navystar.jpg) no-repeat center/cover;
+  width: 100%;
+  height: 200vh;
+  padding-top: 300px;
+}
+
+.linebg .line {
+  width: 0.1%;
+  height: 85%;
+  background-color: #ff6e4e;
+  margin: 0 auto;
+}
+
+.submenu {
+  background: url(../img/bluestar.jpg) center/contain;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.submenu .sp {
+  width: 3rem;
+  height: 3rem;
+  border-top: 2px solid #ff6e4e;
+  border-left: 2px solid #ff6e4e;
+  position: absolute;
+  top: 70px;
+  left: 49.4%;
+  transform: translateX(-50%);
+  animation: ho 1s infinite;
+}
+
+@keyframes ho {
+  0% {
+    transform: translateY(0) rotate(45deg) translateX(-50%);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(45deg) translateX(-50%);
+  }
+
+  100% {
+    transform: translateY(0) rotate(45deg) translateX(-50%);
+  }
+}
+
+.submenu .sp:hover {
+  cursor: pointer;
+  box-shadow: -1.5rem -1.5rem 30px rgb(170, 190, 245);
+}
+
+.submenu > ul {
+  width: 70%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.submenu > ul li {
+  border: 1px solid #ff6e4e;
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.submenu > ul li a {
+  color: white;
+  display: block;
+  position: absolute;
+  top: 106px;
+  left: 0;
+  width: 350px;
+  font-size: 2.5rem;
+  font-family: 'GongGothicMedium';
+}
+
+.submenu > ul li:nth-child(1) a {
+  left: 55px;
+}
+
+.submenu > ul li:nth-child(2) a {
+  left: -23px;
+}
+
+.submenu > ul li:nth-child(3) a {
+  left: 35px;
+}
+
+.submenu > ul li:hover {
+  transform: perspective(300px) translateZ(50px);
+  box-shadow: 0 0 50px rgb(189, 179, 233);
+}
+
+.submenu > section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+/* 영살 모음 영역 */
+.video1,
+.video2,
+.video3 {
+  display: none;
+}
+
+.gallery {
+  background: url(../img/bluestar.jpg) center/contain;
+  width: 100%;
+  height: 100vh;
+  /* display: flex; */
+  position: relative;
+}
+
+.gallery-head {
+  width: 100%;
+  height: 10%;
+  padding: 10vh 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-head > h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'JalnanGothic';
+}
+
+.fa-house {
+  font-size: 4rem;
+  color: white;
+  animation: home 1s infinite;
+}
+
+.fa-house:hover {
+  text-shadow: 0 0 40px rgb(150, 194, 232);
+}
+
+@keyframes home {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.gallery-collection {
+  display: flex;
+  width: 70%;
+  height: 65%;
+  margin: 0 auto;
+  padding-left: 8rem;
+  background-color: rgba(87, 87, 88, 0.3);
+}
+
+.gallery-collection li {
+  flex: 1;
+  justify-content: center;
+  /* padding: 10px 40px 100px; */
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+  height: 100%;
+}
+
+.gallery-collection li:hover {
+  flex: 1.5;
+}
+
+.gallery-collection li .inner {
+  align-content: space-between;
+  position: relative;
+  height: 60%;
+}
+
+.video3 .gallery-collection li .inner {
+  height: 80%;
+  padding-left: 7%;
+}
+
+.gallery-collection li .inner .txt {
+  margin-top: 5%;
+}
+.video3 .gallery-collection li .inner .txt {
+  margin-top: 3%;
+}
+
+.video1 .gallery-collection li .inner .txt {
+  display: flex;
+}
+
+.video2 .gallery-collection li .inner .txt {
+  display: flex;
+}
+
+.video3 .gallery-collection li .inner .txt {
+  display: flex;
+}
+
+.gallery-collection li .inner .txt h3 {
+  color: rgb(65, 64, 64);
+  font-size: 2rem;
+  padding-top: 30px;
+  margin-bottom: 40px;
+  transition: all 0.5s;
+}
+
+.video3 .gallery-collection li .inner .txt h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.gallery-collection li:hover .inner .txt h3 {
+  font-size: 4rem;
+  padding-top: 0;
+  color: azure;
+}
+
+.gallery-collection li .inner .txt h3::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 40px;
+  background-color: #8a6d65;
+  margin-top: 20px;
+  transition: all 1s;
+}
+
+.gallery-collection li:hover .inner .txt h3::after {
+  width: 100px;
+  background-color: #ff6e4e;
+}
+
+.gallery-collection li .inner .txt p {
+  margin: 30px 30px;
+  padding-top: 45px;
+  color: rgb(103, 104, 109);
+  font-family: 'GongGothicMedium';
+
+}
+
+.video3 .gallery-collection li .inner .txt p {
+  margin: 0 30px;
+  padding-top: 70px;
+}
+
+.gallery-collection li .inner figure {
+  width: 80%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.video3 .gallery-collection li .inner figure {
+  width: 80%;
+  height: 80%;
+  margin-top: 20px;
+}
+
+.gallery-collection li .inner figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper.mySwiperv1 {
+  display: none;
+}
+.swiper.mySwiperv2 {
+  display: none;
+}
+
+/* 인터뷰 영역 */
+.itview {
+  position: absolute;
+  left: -100%;
+  top: 0;
+  background: url(../img/navystar.jpg) no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+  z-index: 9;
+}
+
+.itview .bigbox {
+  width: 80%;
+  height: 80%;
+  margin: 5% auto;
+  position: relative;
+}
+
+.itview .bigbox h1 {
+  color: white;
+  font-size: 4rem;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 10rem;
+  left: -9rem;
+  font-family: 'JalnanGothic';
+}
+
+.itview .bigbox .box {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.itview video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.homeimg {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  text-align: right;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  animation: home 1s infinite;
+}
+
+.homeimg:hover {
+  box-shadow: 0 0 20px rgb(150, 194, 232);
+}
+
+/* 자기소개 */
+
+.myself {
+  background: url(../img/navystar.jpg) no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 10%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  opacity: 0;
+  z-index: 9;
+}
+
+.myself .star1 {
+  animation: star 1s infinite alternate;
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+.myself .star11 {
+  animation: star 1s 2s infinite linear alternate;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+}
+
+.myself .star12 {
+  animation: star 0.8s infinite linear alternate;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 18rem;
+  left: 4rem;
+}
+
+.myself .star13 {
+  animation: star 1s infinite linear alternate;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 22rem;
+  left: 13rem;
+}
+
+.myself .star2 {
+  animation: star 1s 1s infinite linear alternate;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 4rem;
+  left: 20rem;
+}
+
+.myself .star3 {
+  animation: star 1s infinite linear alternate;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 7rem;
+  left: 30rem;
+}
+
+.myself .star4 {
+  animation: star 1s infinite linear;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 5rem;
+  left: 50rem;
+}
+
+.myself .star5 {
+  animation: star 1s infinite linear alternate;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 8rem;
+  left: 60rem;
+}
+
+.myself .star6 {
+  animation: star 1s 1s infinite linear alternate;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 3rem;
+  left: 80rem;
+}
+
+.myself .star7 {
+  animation: star 1s infinite linear alternate;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 2rem;
+  left: 86rem;
+}
+
+.myself .star8 {
+  animation: star 1s 2s infinite linear alternate;
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 4rem;
+  left: 95rem;
+}
+
+.myself .star9 {
+  animation: star 1s infinite linear alternate;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 11rem;
+  left: 105rem;
+}
+
+.myself .star10 {
+  animation: star 0.6s 2s infinite linear alternate;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 3rem;
+  left: 112rem;
+}
+
+.myself .star14 {
+  animation: star 1s 0.5s infinite linear alternate;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 20rem;
+  left: 100rem;
+}
+
+.myself .star15 {
+  animation: star 0.8s infinite linear alternate;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  top: 25rem;
+  left: 112rem;
+}
+
+@keyframes star {
+  0% {
+    opacity: 1;
+    box-shadow: 0 0 50px 5px azure;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.myself h1 {
+  color: white;
+}
+
+.myself p {
+  color: white;
+}
+
+.coantain {
+  width: 70%;
+  height: 80%;
+  background-color: rgba(51, 48, 48, 0.5);
+  margin: 0 auto;
+  display: flex;
+}
+
+.my-left {
+  width: 33.3%;
+  height: 100%;
+}
+
+.my-left .pix {
+  width: 50%;
+  height: 40%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  background-color: #fb997a;
+}
+
+.my-left .name {
+  display: flex;
+  margin: 1rem auto;
+  width: 13rem;
+}
+
+.my-left .name h1 {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+.my-left .name > p {
+  padding-top: 0.5rem;
+}
+
+.my-left > p {
+  width: 12rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.my-center {
+  width: 33.3%;
+  height: 100%;
+}
+
+.my-center .box1 {
+  width: 70%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.my-center .box1 h1 {
+  width: 10rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+  padding-top: 5rem;
+}
+
+.my-center .box1 p {
+  width: 10rem;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.my-center .box2 {
+  width: 70%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.my-center .box2 h1 {
+  width: 10rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.my-right {
+  width: 33.3%;
+  height: 100%;
+}
+
+.my-right h1 {
+  width: 10rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+  padding-top: 5rem;
+}
+
+.my-right p {
+  width: 10rem;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.my-right .fa-airbnb {
+  color: #ff6e4e;
+  width: 5rem;
+  height: 5rem;
+}
+
+.myself .homeimg {
+  text-align: right;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.myself .mySwiper {
+  display: none;
+}
+
+.mySwiper {
+  width: 80%;
+  height: 70%;
+  background-color: rgba(51, 48, 48, 0.5);
+  margin: 7rem auto;
+  margin-bottom: 0;
+}
+
+.s1 > .box {
+  width: 45%;
+  height: 50%;
+  margin: 0 auto;
+  margin-top: 7rem;
+  background-color: #fb997a;
+}
+
+.s1 > .h1 {
+  width: 25%;
+  margin: 20px auto;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.s1 > .h1 > p {
+  padding: 0.5rem 0 0 1rem;
+}
+
+.s1 > .p {
+  width: 26%;
+  height: 15%;
+  margin: 0 auto;
+  text-align: center;
+}
